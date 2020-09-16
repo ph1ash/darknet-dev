@@ -10,6 +10,11 @@ Dockerfile + supporting resources for developing & training with YOLOv4
 
 ## How to use
 ### Build from Dockerfile
+Before building, ensure that all the resources have been pulled down with git LFS
+```bash
+git lfs pull
+```
+
 To build a new YOLOv4-dev Docker image, run the following command in the same location as the Dockerfile
 ```bash
 docker build -t <IMAGE_NAME> .
